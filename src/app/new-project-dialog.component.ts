@@ -11,7 +11,7 @@ export class NewProjectDialogComponent {
   constructor(
     public dialogRef: MatDialogRef<NewProjectDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public data: any
-  ) {}
+  ) { }
 
   create(): void {
     this.dialogRef.close(this.projectName);
